@@ -13,8 +13,10 @@ return {
                 disable_italics = true, -- disable italics
                 highlight_groups = {
                     -- normal
-                    --CursorLine = { bg = p.background2 },
+                    CursorLine = { bg = '#202235' },
                     EndOfBuffer = { fg = p.background2 },
+                    FloatBorder = { fg = p.teal2 },
+                    WinSeparator = {fg = p.teal3, bg = p.none },
 
                     -- Barbar fix background gitsings and lsp
                     BufferCurrentCHANGED = { fg = p.blue2, bg = p.background2 },
@@ -39,6 +41,15 @@ return {
                     ['@constant.macro.cpp'] = { fg = p.teal2 },
                     ['@lsp.type.macro.cpp'] = { fg = p.teal2 },
                     ['@lsp.type.enumMember.cpp'] = { fg = p.teal2 },
+
+                    -- CMP
+                    CmpItemKindClass    = { fg = p.background2, bg = p.yellow },
+                    CmpItemKindFunction = { fg = p.background2, bg = p.blue1 },
+                    CmpItemKindInterface= { fg = p.background2, bg = p.blue2 },
+                    CmpItemKindMethod   = { fg = p.background2, bg = p.pink3 },
+                    CmpItemKindSnippet  = { fg = p.background2, bg = p.blueGray1 },
+                    CmpItemKindVariable = { fg = p.background2, bg = p.teal1 },
+                    
                 },
             })
         end,

@@ -8,7 +8,7 @@ return {
         opts = {
             options = {
                 icons_enabled = true,
-                theme = 'poimandres',
+                theme = 'auto',
                 disabled_filetypes = {},
                 -- section_separators = { left = '', right = '' },
                 -- component_separators = { left = '', right = '' },
